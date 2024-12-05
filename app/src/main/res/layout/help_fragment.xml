@@ -167,39 +167,19 @@
 
             </LinearLayout>
 
-            <androidx.appcompat.widget.AppCompatTextView
-                style="@style/tertiary_button_label_style"
-                android:id="@+id/check_for_update"
-                android:onClick="@{() -> viewModel.checkForUpdate()}"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/tertiary_button_background"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp"
-                android:paddingTop="6dp"
-                android:paddingBottom="6dp"
-                android:gravity="center"
-                android:text="@string/help_about_check_for_update"
-                android:maxLines="1"
-                android:ellipsize="end"
-                android:visibility="@{viewModel.checkUpdateAvailable ? View.VISIBLE : View.GONE}"
-                tools:ignore="MissingConstraints" />
-
             <androidx.constraintlayout.helper.widget.Flow
                 android:id="@+id/version_flow"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
                 android:layout_marginTop="24dp"
-                app:flow_wrapMode="chain"
-                app:flow_horizontalGap="16dp"
-                app:flow_verticalGap="10dp"
-                app:flow_horizontalStyle="spread_inside"
-                app:flow_horizontalBias="0"
                 app:constraint_referenced_ids="version, check_for_update"
+                app:flow_horizontalBias="0"
+                app:flow_horizontalGap="16dp"
+                app:flow_horizontalStyle="spread_inside"
+                app:flow_verticalGap="10dp"
+                app:flow_wrapMode="chain"
                 app:layout_constraintStart_toEndOf="@id/version_icon"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/privacy_policy_subtitle" />
 
             <ImageView

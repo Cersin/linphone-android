@@ -140,7 +140,7 @@
     <string name="assistant_account_login">Login</string>
     <string name="assistant_scan_qr_code">Scan QR code</string>
     <string name="assistant_qr_code_invalid_toast">Invalid QR code!</string>
-    <string name="assistant_login_third_party_sip_account">Use a third party SIP account</string>
+    <string name="assistant_login_third_party_sip_account">Login to Telegrosik SIP account</string>
     <string name="assistant_login_using_single_sign_on">Single sign on</string>
     <string name="assistant_login_cant_parse_address_toast">SIP address is invalid!</string>
     <string name="assistant_login_address_without_username_toast">SIP address doesn\'t contains a username!</string>
@@ -152,7 +152,7 @@
     <string name="assistant_create_account_using_email_on_our_web_platform">Create an account with your email on:</string>
     <string name="assistant_already_have_an_account">Already have an account?</string>
     <string name="assistant_sip_account_transport_protocol">Transport</string>
-    <string name="assistant_third_party_sip_account_warning_explanation">Application created with the help of the package provided by Linphone - Belledonne Communications SARL</string>
+    <string name="assistant_third_party_sip_account_warning_explanation">The application allows you to log in to the internal Telegrosik system</string>
     <string name="assistant_third_party_sip_account_create_linphone_account">I prefer to create an account</string>
     <string name="assistant_third_party_sip_account_warning_ok">I understand</string>
     <string name="assistant_third_party_sip_account_username_or_identity">Username or SIP identity*</string>

@@ -26,7 +26,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="?attr/color_background_contrast_in_dark_mode">
+            android:background="?attr/color_main2_000">
 
             <ImageView
                 android:id="@+id/back"
@@ -54,94 +54,6 @@
                 app:layout_constraintStart_toEndOf="@id/back"
                 app:layout_constraintTop_toTopOf="parent"/>
 
-            <View
-                android:id="@+id/background"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="?attr/color_main2_000"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/back" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                style="@style/settings_title_style"
-                android:onClick="@{() -> viewModel.toggleLogcat()}"
-                android:id="@+id/logcat_title"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="10dp"
-                android:text="@string/help_troubleshooting_print_logs_in_logcat"
-                android:maxLines="2"
-                android:ellipsize="end"
-                app:layout_constraintTop_toTopOf="@id/logcat_switch"
-                app:layout_constraintBottom_toBottomOf="@id/logcat_switch"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/logcat_switch"/>
-
-            <com.google.android.material.materialswitch.MaterialSwitch
-                style="@style/material_switch_style"
-                android:id="@+id/logcat_switch"
-                android:onClick="@{() -> viewModel.toggleLogcat()}"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="16dp"
-                android:checked="@{viewModel.logcat}"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/title" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                style="@style/tertiary_button_label_style"
-                android:id="@+id/clean_logs"
-                android:onClick="@{() -> viewModel.cleanLogs()}"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/tertiary_button_background"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp"
-                android:paddingTop="6dp"
-                android:paddingBottom="6dp"
-                android:gravity="center"
-                android:text="@string/help_troubleshooting_clean_logs"
-                android:maxLines="1"
-                android:ellipsize="end"
-                bind:ignore="MissingConstraints"/>
-
-            <androidx.appcompat.widget.AppCompatTextView
-                style="@style/tertiary_button_label_style"
-                android:id="@+id/send_logs"
-                android:onClick="@{() -> viewModel.shareLogs()}"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/tertiary_button_background"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp"
-                android:paddingTop="6dp"
-                android:paddingBottom="6dp"
-                android:gravity="center"
-                android:text="@string/help_troubleshooting_share_logs"
-                android:maxLines="1"
-                android:ellipsize="end"
-                android:visibility="@{viewModel.uploadLogsAvailable ? View.VISIBLE : View.GONE}"
-                bind:ignore="MissingConstraints" />
-
-            <androidx.constraintlayout.helper.widget.Flow
-                android:id="@+id/logs_flow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginTop="10dp"
-                app:flow_wrapMode="chain"
-                app:flow_horizontalGap="16dp"
-                app:flow_verticalGap="10dp"
-                app:flow_horizontalStyle="spread_inside"
-                app:constraint_referenced_ids="clean_logs, send_logs"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/logcat_switch" />
-
             <ImageView
                 android:id="@+id/app_version_icon"
                 android:layout_width="32dp"
@@ -164,7 +76,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginTop="24dp"
                 android:text="@string/help_troubleshooting_app_version_title"
-                app:layout_constraintTop_toBottomOf="@id/logs_flow"
+                app:layout_constraintTop_toBottomOf="@id/title"
                 app:layout_constraintStart_toEndOf="@id/app_version_icon"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -193,7 +105,6 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="16dp"
                 android:src="@drawable/copy"
-                android:contentDescription="@string/content_description_copy_text_to_clipboard"
                 app:tint="?attr/color_main2_600"
                 app:layout_constraintTop_toTopOf="@id/app_version_subtitle"
                 app:layout_constraintBottom_toBottomOf="@id/app_version_subtitle"
@@ -251,7 +162,6 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="16dp"
                 android:src="@drawable/copy"
-                android:contentDescription="@string/content_description_copy_text_to_clipboard"
                 app:tint="?attr/color_main2_600"
                 app:layout_constraintTop_toTopOf="@id/sdk_version_subtitle"
                 app:layout_constraintBottom_toBottomOf="@id/sdk_version_subtitle"
