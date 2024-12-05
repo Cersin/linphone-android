@@ -114,7 +114,7 @@
     <string name="assistant_create_account_using_email_on_our_web_platform">Créez un compte avec votre email ici :</string>
     <string name="assistant_already_have_an_account">Vous avez déjà un compte ?</string>
     <string name="assistant_sip_account_transport_protocol">Transport</string>
-    <string name="assistant_third_party_sip_account_warning_explanation">Certaines fonctionalités telles que les conversations de groupe, les vidéo-conférences, etc… nécessitent un compte &appName;.\n\nCes fonctionalités seront masquées si vous utilisez un compte SIP tiers.\n\nPour les activer dans un projet commercial, merci de nous contacter.</string>
+    <string name="assistant_third_party_sip_account_warning_explanation">Application réalisée à l\'aide du package fourni par Linphone - Belledonne Communications SARL</string>
     <string name="assistant_third_party_sip_account_create_linphone_account">Je préfère créer un compte</string>
     <string name="assistant_third_party_sip_account_warning_ok">J\'ai compris</string>
     <string name="assistant_third_party_sip_account_username_or_identity">Nom d\'utilisateur ou identité SIP*</string>

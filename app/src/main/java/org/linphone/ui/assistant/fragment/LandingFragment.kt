@@ -28,11 +28,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.UiThread
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navGraphViewModels
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 import org.linphone.LinphoneApplication.Companion.coreContext
 import org.linphone.LinphoneApplication.Companion.corePreferences
 import org.linphone.R
@@ -113,12 +110,12 @@ class LandingFragment : GenericFragment() {
             }
         }
 
-        viewModel.showPassword.observe(viewLifecycleOwner) {
-            lifecycleScope.launch {
-                delay(50)
-                binding.password.setSelection(binding.password.text?.length ?: 0)
-            }
-        }
+//        viewModel.showPassword.observe(viewLifecycleOwner) {
+//            lifecycleScope.launch {
+//                delay(50)
+//                binding.password.setSelection(binding.password.text?.length ?: 0)
+//            }
+//        }
 
         viewModel.accountLoggedInEvent.observe(viewLifecycleOwner) {
             it.consume {
