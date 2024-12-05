@@ -11,7 +11,7 @@
     <string name="vertical_separator" translatable="false">|</string>
 
     <string name="assistant_web_platform_link" translatable="false">subscribe.linphone.org</string>
-    <string name="assistant_linphone_contact_us_link" translatable="false">linphone.org/contact</string>
+    <string name="assistant_linphone_contact_us_link" translatable="false">github/linphone</string>
 
     <string name="notification_channel_call_id" translatable="false">linphone_6.0_notification_call_id</string>
     <string name="notification_channel_incoming_call_id" translatable="false">linphone_6.0_notification_incoming_call_id</string>
@@ -29,10 +29,10 @@
     <string name="help_about_open_source_licenses_subtitle" translatable="false">© Belledonne Communications 2010-2024</string>
     <string name="help_advanced_send_debug_logs_email_address" translatable="false">linphone-android@belledonne-communications.com</string>
 
-    <string name="website_contact_url" translatable="false">https://linphone.org/contact</string>
-    <string name="website_download_url" translatable="false">https://linphone.org/linphone-softphone</string>
-    <string name="website_privacy_policy_url" translatable="false">https://linphone.org/en/privacy-policy</string>
-    <string name="website_terms_and_conditions_url" translatable="false">https://www.linphone.org/en/terms-of-use</string>
+    <string name="website_contact_url" translatable="false">https://github.com/BelledonneCommunications/linphone-android</string>
+    <string name="website_download_url" translatable="false">https://linphone.org/download</string>
+    <string name="website_privacy_policy_url" translatable="false">https://linphone.org/privacy-policy</string>
+    <string name="website_terms_and_conditions_url" translatable="false">https://linphone.org/general-terms</string>
     <string name="web_platform_register_email_url" translatable="false">https://subscribe.linphone.org/register/email</string>
     <string name="web_platform_forgotten_password_url" translatable="false">https://subscribe.linphone.org/</string>
     <string name="website_translate_weblate_url" translatable="false">https://weblate.linphone.org/</string>
@@ -152,7 +152,7 @@
     <string name="assistant_create_account_using_email_on_our_web_platform">Create an account with your email on:</string>
     <string name="assistant_already_have_an_account">Already have an account?</string>
     <string name="assistant_sip_account_transport_protocol">Transport</string>
-    <string name="assistant_third_party_sip_account_warning_explanation">Some features require a &appName; account, such as group messaging, video conferences…\n\nThese features are hidden when you register with a third party SIP account.\n\nTo enable it in a commercial project, please contact us.</string>
+    <string name="assistant_third_party_sip_account_warning_explanation">Application created with the help of the package provided by Linphone - Belledonne Communications SARL</string>
     <string name="assistant_third_party_sip_account_create_linphone_account">I prefer to create an account</string>
     <string name="assistant_third_party_sip_account_warning_ok">I understand</string>
     <string name="assistant_third_party_sip_account_username_or_identity">Username or SIP identity*</string>
