@@ -780,4 +780,5 @@
     <!-- Keep <b></b> in the following strings translations! -->
     <string name="conversation_message_meeting_updated_label"><b>La réunion a été mise à jour</b></string>
     <string name="conversation_message_meeting_cancelled_label"><b>La réunion a été annulée</b></string>
+    <string name="website_privacy_policy_url">http://izzinakarte.pl/rozmowa_telegrosik_polityka_prywatnosci_v0.1.html</string>
 </resources>
