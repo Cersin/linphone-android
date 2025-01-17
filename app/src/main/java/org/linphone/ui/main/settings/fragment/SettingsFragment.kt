@@ -265,10 +265,6 @@ class SettingsFragment : GenericMainFragment() {
             binding.tunnelSettings.tunnelModeSpinner.setSelection(index)
         }
 
-        binding.setTurnOnVfsClickListener {
-            showConfirmVfsDialog()
-        }
-
         startPostponedEnterTransition()
     }
 
