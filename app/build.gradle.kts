@@ -14,7 +14,7 @@ plugins {
     alias(libs.plugins.crashlytics)
 }
 
-val packageName = "org.linphone"
+val packageName = "org.telegrosik.phone"
 val useDifferentPackageNameForDebugBuild = false
 
 val sdkPath = providers.gradleProperty("LinphoneSdkBuildDir").get()
@@ -100,7 +100,7 @@ android {
         applicationId = packageName
         minSdk = 28
         targetSdk = 35
-        versionCode = 600000 // 6.00.000
+        versionCode = 600004 // 6.00.004
         versionName = "6.0.0"
 
         manifestPlaceholders["appAuthRedirectScheme"] = "org.linphone"

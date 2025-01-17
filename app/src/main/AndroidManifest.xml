@@ -60,9 +60,9 @@
         <meta-data
             android:name="com.google.android.gms.car.application"
             android:resource="@xml/automotive_app_desc"/>
-        <!--<meta-data
+        <meta-data
             android:name="androidx.car.app.minCarApiLevel"
-            android:value="1"/>-->
+            android:value="1"/>
 
         <activity
             android:name=".ui.main.MainActivity"
@@ -198,14 +198,15 @@
                 android:value="Needed to keep app alive to be able to receive messages and calls from third party SIP servers for which push notifications aren't available." />
         </service>
 
-        <!--<service
+        <service
             android:name=".telecom.auto.AAService"
-            android:exported="true">
+            android:exported="true"
+            android:permission="Messaging">
             <intent-filter>
                 <action android:name="androidx.car.app.CarAppService"/>
-                <category android:name="androidx.car.app.category.CALLING"/>
+                <category android:name="androidx.car.app.category.POI"/>
             </intent-filter>
-        </service>-->
+        </service>
 
         <!-- Receivers -->
 
