@@ -100,8 +100,8 @@ android {
         applicationId = packageName
         minSdk = 28
         targetSdk = 35
-        versionCode = 600005 // 6.00.005
-        versionName = "6.0.1"
+        versionCode = 600100 // 6.00.010
+        versionName = "6.0.5"
 
         manifestPlaceholders["appAuthRedirectScheme"] = "org.linphone"
 
@@ -225,7 +225,6 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.emoji2)
-    implementation(libs.androidx.car)
 
     // https://github.com/google/flexbox-layout/blob/main/LICENSE Apache v2.0
     implementation(libs.google.flexbox)
