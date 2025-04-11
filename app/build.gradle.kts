@@ -100,8 +100,8 @@ android {
         applicationId = packageName
         minSdk = 28
         targetSdk = 35
-        versionCode = 600100 // 6.00.010
-        versionName = "6.0.5"
+        versionCode = 600102 // 6.00.012
+        versionName = "6.0.7"
 
         manifestPlaceholders["appAuthRedirectScheme"] = "org.linphone"
 

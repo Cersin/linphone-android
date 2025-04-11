@@ -116,7 +116,7 @@
     <string name="welcome_page_2_title">Secured</string>
     <string name="welcome_page_2_message">Your communications are safe thanks to our <b>end-to-end encryption</b>.</string>
     <string name="welcome_page_3_title">Open source</string>
-    <string name="welcome_page_3_message">A <b>free</b> and open source application since <b>2001</b>.</string>
+    <string name="welcome_page_3_message">A <b>free</b> and open source application.</string>
 
     <!-- Generic toasts -->
     <string name="sip_address_copied_to_clipboard_toast">SIP address copied into clipboard</string>

@@ -77,7 +77,7 @@
     <string name="welcome_page_2_title">Sécurisé</string>
     <string name="welcome_page_2_message">Vos communications sont en sécurité grâce au <b>chiffrement de bout en bout</b>.</string>
     <string name="welcome_page_3_title">Open source</string>
-    <string name="welcome_page_3_message">Une application open source et un <b>service gratuit</b> depuis <b>2001</b>.</string>
+    <string name="welcome_page_3_message">Une application open source et un <b>service gratuit</b>.</string>
 
     <!-- Generic toasts -->
     <string name="sip_address_copied_to_clipboard_toast">Adresse copiée</string>
