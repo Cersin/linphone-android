@@ -54,7 +54,7 @@
         android:localeConfig="@xml/locales_config"
         android:theme="@style/Theme.Linphone"
         android:appCategory="social"
-        tools:targetApi="35">
+        tools:targetApi="36">
 
         <activity
             android:name=".ui.main.MainActivity"
