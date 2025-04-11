@@ -1353,7 +1353,7 @@ class CurrentCallViewModel
         operationInProgress.postValue(true)
 
         val params = getChatRoomParams(call) ?: return // TODO: show error to user
-        val conversation = core.createChatRoom(params, localAddress, participants)
+        val conversation = core.createChatRoom(params, participants)
         if (conversation != null) {
             if (params.chatParams?.backend == ChatRoom.Backend.FlexisipChat) {
                 if (conversation.state == ChatRoom.State.Created) {

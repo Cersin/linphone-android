@@ -291,7 +291,7 @@ class HistoryViewModel
                         "$TAG No existing conversation between [$localSipUri] and [$remoteSipUri] was found, let's create it"
                     )
                     operationInProgress.postValue(true)
-                    val chatRoom = core.createChatRoom(params, localAddress, participants)
+                    val chatRoom = core.createChatRoom(params, participants)
                     if (chatRoom != null) {
                         if (chatParams.backend == ChatRoom.Backend.FlexisipChat) {
                             if (chatRoom.state == ChatRoom.State.Created) {

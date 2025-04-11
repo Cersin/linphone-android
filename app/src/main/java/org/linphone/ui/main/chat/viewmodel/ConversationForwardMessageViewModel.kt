@@ -240,7 +240,7 @@ class ConversationForwardMessageViewModel
             Log.i(
                 "$TAG No existing 1-1 conversation between local account [${localAddress?.asStringUriOnly()}] and remote [${remote.asStringUriOnly()}] was found for given parameters, let's create it"
             )
-            val chatRoom = core.createChatRoom(params, localAddress, participants)
+            val chatRoom = core.createChatRoom(params, participants)
             if (chatRoom != null) {
                 if (chatParams.backend == ChatRoom.Backend.FlexisipChat) {
                     if (chatRoom.state == ChatRoom.State.Created) {
